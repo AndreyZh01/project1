@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddRecord</class>
+ <widget class="QDialog" name="AddRecord">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>347</width>
+    <height>222</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>215</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Добавить запись</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="banks">
+      <attribute name="title">
+       <string>Банки</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="name">
+         <property name="text">
+          <string>Название</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="nameLine"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="country">
+         <property name="text">
+          <string>Страна</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="countryLine"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="currency">
+         <property name="text">
+          <string>Код валюты</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="currencyLine"/>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QPushButton" name="BankRecordButton">
+         <property name="text">
+          <string>Добавить запись</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="branches">
+      <attribute name="title">
+       <string>Филиалы</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="2" column="0">
+        <widget class="QLabel" name="streetLabel">
+         <property name="text">
+          <string>Улица</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="bankLine"/>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="buildingNumberLine"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="streetLine"/>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QLabel" name="buildingNumberLabel">
+         <property name="text">
+          <string>Номер строения</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="cityLabel">
+         <property name="text">
+          <string>Город</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="postalCodeLine"/>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QLabel" name="postalCodeLabel">
+         <property name="text">
+          <string>Почтовый индекс</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="bankLabel">
+         <property name="text">
+          <string>ID банка</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="cityLine"/>
+       </item>
+       <item row="5" column="0" colspan="3">
+        <widget class="QPushButton" name="BranchRecordButton">
+         <property name="text">
+          <string>Добавить запись</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Контактная информация</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QLabel" name="branchIdLabel">
+         <property name="text">
+          <string>ID Филиала</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="branchIdLine"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="phoneNumberLabel">
+         <property name="text">
+          <string>Номер телефона</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="phoneNumberLine"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="emailLabel">
+         <property name="text">
+          <string>Email</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="emailLine"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="websiteLabel">
+         <property name="text">
+          <string>Website</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="websiteLine"/>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QPushButton" name="ContactInfoRecordButton">
+         <property name="text">
+          <string>Добавить запись</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

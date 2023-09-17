@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChangeRecord</class>
+ <widget class="QDialog" name="ChangeRecord">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>347</width>
+    <height>222</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>215</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Редактировать запись</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="banks">
+      <attribute name="title">
+       <string>Банки</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="3" column="0">
+        <widget class="QLabel" name="currency">
+         <property name="text">
+          <string>Код валюты</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="name">
+         <property name="text">
+          <string>Название</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="countryLine"/>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="currencyLine"/>
+       </item>
+       <item row="4" column="0" colspan="3">
+        <widget class="QPushButton" name="BankRecordButton">
+         <property name="text">
+          <string>Редактировать запись</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="BankId">
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="nameLine"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="country">
+         <property name="text">
+          <string>Страна</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="BankIdLine"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="branches">
+      <attribute name="title">
+       <string>Филиалы</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="0">
+        <widget class="QLabel" name="BankLabel">
+         <property name="text">
+          <string>ID Банка</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="StreetLabel">
+         <property name="text">
+          <string>Улица</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="CityLabel">
+         <property name="text">
+          <string>Город</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="PostalCodeLine"/>
+       </item>
+       <item row="6" column="0" colspan="3">
+        <widget class="QPushButton" name="BranchRecordButton">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Редактировать запись</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QLabel" name="PostalCodeLabel">
+         <property name="text">
+          <string>Почтовый индекс</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="BankIdRelationLine"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="CityLine"/>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="BuildingNumberLine"/>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QLabel" name="BuildingNumberLabel">
+         <property name="text">
+          <string>Номер строения</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="StreetLine"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="BranchId">
+         <property name="text">
+          <string>ID Филиала</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="BranchIdLine"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Контактная информация</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="2" column="0">
+        <widget class="QLabel" name="PhoneNumberLabel">
+         <property name="text">
+          <string>Номер телефона</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="EmailLine"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="WebsiteLabel">
+         <property name="text">
+          <string>Website</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QPushButton" name="ContactInfoRecordButton">
+         <property name="text">
+          <string>Добавить запись</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="PhoneNumberLine"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="BranchIdLabel">
+         <property name="text">
+          <string>ID Филиала</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="EmailLabel">
+         <property name="text">
+          <string>Email</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="WebsiteLine"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="BranchIdRelationLine"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="ContactInfoIdLabel">
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="ContactInfoIdLine"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DeleteRecord</class>
+ <widget class="QDialog" name="DeleteRecord">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>122</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>350</width>
+    <height>122</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="Bank">
+      <attribute name="title">
+       <string>Банки</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="BankId">
+         <property name="text">
+          <string>BankId</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="BankIdLine"/>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QPushButton" name="BankRemoveButton">
+         <property name="text">
+          <string>Удалить запись</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Филиалы</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="BranchId">
+         <property name="text">
+          <string>BranchId</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="BranchLine"/>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QPushButton" name="BranchRemoveButton">
+         <property name="text">
+          <string>Удалить запись</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Контактная информация</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QLabel" name="ContactInfoLabel">
+         <property name="text">
+          <string>ContactInfoId</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="ContactInfoLine"/>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QPushButton" name="ContactInfoButton">
+         <property name="text">
+          <string>Удалить запись</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
